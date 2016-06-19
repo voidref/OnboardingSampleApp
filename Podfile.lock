@@ -1,5 +1,5 @@
 PODS:
-  - Onboarding (0.1.0)
+  - Onboarding (0.1.2)
 
 DEPENDENCIES:
   - Onboarding (from `https://github.com/voidref/Onboarding.git`)
@@ -10,10 +10,12 @@ EXTERNAL SOURCES:
 
 CHECKOUT OPTIONS:
   Onboarding:
-    :commit: 45aa4ff472a8d9c29717d21433852e54ae116574
+    :commit: 8fc1f97039ef9fc80585fffb70616a8cfa4477e5
     :git: https://github.com/voidref/Onboarding.git
 
 SPEC CHECKSUMS:
-  Onboarding: 077e6624877783598e9476e36a6654f294dabd17
+  Onboarding: 90457569585d67dfcd78c5bf77e5d80f0522ca72
 
-COCOAPODS: 0.39.0
+PODFILE CHECKSUM: 6f1c43c429f77dea0dcfe9558360923cfe2e9fdb
+
+COCOAPODS: 1.0.0

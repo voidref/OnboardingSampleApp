@@ -14,20 +14,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let appLabel = UILabel()
-        appLabel.translatesAutoresizingMaskIntoConstraints = false
-        appLabel.text = "App Goes Here"
-        view.addSubview(appLabel)
-        view.addConstraint(NSLayoutConstraint.constraintFor(view: appLabel, attribute: .CenterY, equalToView: view))
-        view.addConstraint(NSLayoutConstraint.constraintFor(view: appLabel, attribute: .CenterX, equalToView: view))
-
         let ob = OnboardingViewController()
+        
         addChildViewController(ob)
         view.addSubview(ob.view)
+        ob.view.backgroundColor = UIColor.clearColor()
         
         ob.skipPosition = .topLeft
 
-        view.addConstraints(NSLayoutConstraint.constraintsFor(view: ob.view, fillingParentView: view))
+        NSLayoutConstraint.activateConstraints(NSLayoutConstraint.constraintsFor(view: ob.view, fillingParentView: view))
         
         let firstPage = OnboardingContentPage(titleText: "First!", contentText: "Some content that's all cool and stuff")
         
@@ -36,7 +31,8 @@ class ViewController: UIViewController {
         
         let finalPage = OnboardingFinalPage(titleText: "Done!")
         
-        ob.setPages([firstPage, secondPage, finalPage])
+        let pageList = [firstPage, secondPage, finalPage] 
+        ob.setPages(pageList)
         
         ob.doneAction = { obc in            
             UIView.animateWithDuration(0.3, animations: { 

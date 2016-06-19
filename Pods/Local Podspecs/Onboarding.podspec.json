@@ -1,16 +1,16 @@
 {
   "name": "Onboarding",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "summary": "An easy multipage onboarding UI controller.",
-  "description": "A few pages of onboarding is near ubiquitous in today's iOS apps, but UIPageViewController is honestly an overly complex way to accomplish this, often with layout problems for things like a skip button. This library attempts to make it easier to do.",
+  "description": "Starting with a few pages of onboarding is near ubiquitous in today's iOS apps, but UIPageViewController is honestly an overly complex way to accomplish this, often with layout problems for things like a skip button. This library attempts to make it easier to do.",
   "homepage": "https://github.com/voidref/Onboarding",
   "license": "MIT",
   "authors": {
-    "voidref": "voidref@me.com"
+    "voidref": "voidref@gmail.com"
   },
   "source": {
     "git": "https://github.com/voidref/Onboarding.git",
-    "tag": "0.1.0"
+    "tag": "0.1.2"
   },
   "platforms": {
     "ios": "9.0"

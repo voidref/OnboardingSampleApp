@@ -19,6 +19,11 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
+		<key>Pods-OnboardAppUITests.xcscheme</key>
+		<dict>
+			<key>isShown</key>
+			<false/>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -32,7 +37,12 @@
 			<key>primary</key>
 			<true/>
 		</dict>
-		<key>BC036C76A9D52795F6C4B14D6BD25BAA</key>
+		<key>76D0FAD5F04CAA63C002785BF56E2F4B</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>886EC84AFB413DB425E3B38A71A9CA8C</key>
 		<dict>
 			<key>primary</key>
 			<true/>

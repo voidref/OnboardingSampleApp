@@ -14,7 +14,7 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = 'primary'
-               BlueprintIdentifier = '4DC2D59FE707BB50EA4DD414'
+               BlueprintIdentifier = '0C3D9D4BE7C1357B7D10657A32641D36'
                BlueprintName = 'Onboarding-Onboarding'
                ReferencedContainer = 'container:Pods.xcodeproj'
                BuildableName = 'Onboarding.bundle'>

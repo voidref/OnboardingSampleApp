@@ -4,7 +4,7 @@
 use_frameworks!
 
 target 'OnboardApp' do
-    pod 'Onboarding', :git => 'https://github.com/voidref/Onboarding.git'
+    pod 'Onboarding', :git => 'https://github.com/voidref/Onboarding.git', :tag => '2.0'
 end
 
 target 'OnboardAppUITests' do

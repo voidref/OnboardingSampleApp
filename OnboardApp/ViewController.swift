@@ -14,15 +14,15 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let ob = OnboardingViewController()
+        let onboarding = OnboardingViewController()
         
-        addChildViewController(ob)
-        view.addSubview(ob.view)
-        ob.view.backgroundColor = UIColor.clearColor()
+        addChildViewController(onboarding)
+        view.addSubview(onboarding.view)
+        onboarding.view.backgroundColor = UIColor.clear()
         
-        ob.skipPosition = .topLeft
+        onboarding.skipPosition = .topLeft
 
-        NSLayoutConstraint.activateConstraints(NSLayoutConstraint.constraintsFor(view: ob.view, fillingParentView: view))
+        NSLayoutConstraint.activate(NSLayoutConstraint.constraints(for: onboarding.view, filling: view))
         
         let firstPage = OnboardingContentPage(titleText: "First!", contentText: "Some content that's all cool and stuff")
         
@@ -32,16 +32,16 @@ class ViewController: UIViewController {
         let finalPage = OnboardingFinalPage(titleText: "Done!")
         
         let pageList = [firstPage, secondPage, finalPage] 
-        ob.setPages(pageList)
+        onboarding.setPages(pageList)
         
-        ob.doneAction = { obc in            
-            UIView.animateWithDuration(0.3, animations: { 
-                    obc.view.alpha = 0
+        onboarding.doneAction = { controller in            
+            UIView.animate(withDuration: 0.3, animations: { 
+                    controller.view.alpha = 0
                 }, completion: { done in
-                    obc.view.removeFromSuperview()
-                    obc.removeFromParentViewController()
+                    controller.view.removeFromSuperview()
+                    controller.removeFromParentViewController()
             })
-        }        
+        }
     }
 
     override func prefersStatusBarHidden() -> Bool {

@@ -13,10 +13,10 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
-    func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
 
-        let mainWindow = UIWindow(frame: UIScreen.mainScreen().bounds)
-        mainWindow.backgroundColor = UIColor.whiteColor()
+        let mainWindow = UIWindow(frame: UIScreen.main().bounds)
+        mainWindow.backgroundColor = UIColor.white()
         mainWindow.rootViewController = ViewController()
         mainWindow.makeKeyAndVisible()
         
